@@ -10,7 +10,10 @@
 
     <a-scene embedded arjs="debugUIEnabled:false;">
 
-      <a-marker type="pattern" url="https://webartest-2.netlify.com/marker/pattern-marker.patt">
+      <a-assets id="blockControl_2" src="https://webartest-2.netlify.com/asset/blockControl_2.svg"></a-assets>
+
+      <a-marker type="pattern" url="https://webartest-2.netlify.com/marker/pattern-blockControl_2.patt">
+        <a-image width="1" height="1" rotation="-90 0 0" src="#blockControl_2"></a-image>
         <a-box position="0 0.5 0" wireframe="true"></a-box>
       </a-marker>
 
