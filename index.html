@@ -13,11 +13,12 @@
       <a-assets>
         <a-asset-item id="triangle" src="https://webartest-2.netlify.com/assets/pattern-triangle.png"></a-asset-item>
         <a-asset-item id="move" src="https://webartest-2.netlify.com/assets/pattern-move.png"></a-asset-item>
-        <a-asset-item id="car" src="https://webartest-2.netlify.com/assets/model.obj"></a-asset-item>
+        <a-asset-item id="model" src="https://webartest-2.netlify.com/assets/model.obj"></a-asset-item>
+        <a-asset-item id="material" src="https://webartest-2.netlify.com/assets/materials.mtl"></a-asset-item>
       </a-assets>
 
       <a-marker type="pattern" preset="custom" url="https://webartest-2.netlify.com/marker/pattern-move.patt">
-        <a-obj-model src="#car" mtl="materials.mtl" scale="0.1 0.1 0.1" position="0 0.5 0"></a-obj-model>
+        <a-obj-model src="#model" mtl="#material" scale="0.1 0.1 0.1" position="0 0.5 0"></a-obj-model>
       </a-marker>
 
       <a-entity camera></a-entity>
